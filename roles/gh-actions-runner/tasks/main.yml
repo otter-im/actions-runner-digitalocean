@@ -1,15 +1,13 @@
-- name: Install jq
-  ansible.builtin.package:
-    name: jq
+- name: Install dependencies
+  apt:
+    name:
+      - jq
+      - gcc
+    update_cache: true
     state: present
   become: true
 
-- name: Install gcc
-  ansible.builtin.package:
-    name: gcc
-    state: present
-
-- name: Create Actions user
+- name: Create GitHub Actions user
   user:
     name: actions
     home: "/opt/actions-runner"
@@ -17,6 +15,7 @@
     system: true
     comment: "GitHub Actions Runner"
     shell: "/bin/bash"
+    groups: docker
     state: present
   become: true
 

@@ -3,4 +3,5 @@
     - external_vars.yml
   roles:
     - sys-upgrade
+    - docker
     - gh-actions-runner
