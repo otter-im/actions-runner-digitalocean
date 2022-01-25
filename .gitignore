@@ -3,7 +3,7 @@
 *.lock.*
 *.tfvars
 **/.terraform/*
-inventory.yml
+ansible_inventory
 **/.ssh/*
 *.tfstate
 *.tfstate.*

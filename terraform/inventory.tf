@@ -9,5 +9,6 @@ resource "local_file" "ansible_inventory" {
    ip_addrs = digitalocean_droplet.gh_actions_runner[*].ipv4_address
    ssh_keyfile = local_file.private_key.filename
   })
-  filename = format("%s/%s", abspath(path.root), "inventory.yml")
+  filename = format("%s/%s", abspath(path.root), "ansible_inventory")
+  file_permission = "0664"
 }
