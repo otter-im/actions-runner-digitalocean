@@ -4,6 +4,8 @@ resource "digitalocean_droplet" "gh_actions_runner" {
   ipv6   = true
   region = var.instance_region
   size   = var.instance_size
+  ssh_keys = [ digitalocean_ssh_key.default.fingerprint ]
+  monitoring = false
   count  = var.instance_count
 }
 
