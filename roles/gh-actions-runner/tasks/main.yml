@@ -4,6 +4,11 @@
     state: present
   become: true
 
+- name: Install gcc
+  ansible.builtin.package:
+    name: gcc
+    state: present
+
 - name: Create Actions user
   user:
     name: actions
