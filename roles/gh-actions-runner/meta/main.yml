@@ -1,0 +1,9 @@
+galaxy_info:
+  author: Otter Social
+  description: Install a GitHub Actions runner
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags: []
+dependencies: []

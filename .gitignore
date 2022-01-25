@@ -16,3 +16,4 @@ override.tf.json
 *tfplan*
 .terraformrc
 terraform.rc
+external_vars.yml

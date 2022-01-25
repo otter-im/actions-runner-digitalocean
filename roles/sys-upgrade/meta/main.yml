@@ -1,0 +1,9 @@
+galaxy_info:
+  author: Otter Social
+  description: Upgrade packages
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags: []
+dependencies: []

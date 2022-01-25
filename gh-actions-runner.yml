@@ -1,0 +1,6 @@
+- hosts: gh_actions_runner
+  vars_files:
+    - external_vars.yml
+  roles:
+    - sys-upgrade
+    - gh-actions-runner
