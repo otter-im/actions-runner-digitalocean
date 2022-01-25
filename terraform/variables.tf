@@ -6,11 +6,6 @@ variable "environment" {
   default = "Development"
 }
 
-variable "ssh_public_key" {
-  type = string
-  description = "Local SSH key file location on disk"
-}
-
 variable "instance_name" {
   type = string
   description = "Instance name not including the index suffix"

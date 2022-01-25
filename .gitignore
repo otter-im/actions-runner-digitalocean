@@ -3,6 +3,8 @@
 *.lock.*
 *.tfvars
 **/.terraform/*
+inventory.yml
+**/.ssh/*
 *.tfstate
 *.tfstate.*
 crash.log

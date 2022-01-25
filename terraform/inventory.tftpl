@@ -1,0 +1,8 @@
+[gh-actions-runners]
+%{ for ip in ip_addrs ~}
+${ip}
+%{ endfor ~}
+
+[gh-actions-runners:vars]
+ansible_ssh_user=root
+ansible_ssh_private_key_file=${ssh_keyfile}
